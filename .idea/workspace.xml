@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea34f962-e071-4f55-be7d-d2a957ae8a5c" name="Changes" comment="Removed comments">
+    <list default="true" id="ea34f962-e071-4f55-be7d-d2a957ae8a5c" name="Changes" comment="Change ApiActions class to static so it will have access from all across the project">
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/People.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/Values.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/ApiActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/ApiActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/AboutUs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/AboutUs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/Careers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/Careers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/WhatsNew.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/WhatsNew.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/ManagePages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/ManagePages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RedBrickMiniAutomation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RedBrickMiniAutomation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,6 +59,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.RedBrickMiniAutomation.test.executor": "Run",
+    "TestNG.RedBrickMiniAutomation.whatsnew.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Modules",
@@ -61,7 +67,7 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.RedBrickMiniAutomation.whatsnew">
     <configuration name="RedBrickMiniAutomation.test" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RedBrick" />
       <option name="PACKAGE_NAME" value="" />
@@ -74,8 +80,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RedBrickMiniAutomation.whatsnew" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RedBrick" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RedBrickMiniAutomation" />
+      <option name="METHOD_NAME" value="whatsnew" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.RedBrickMiniAutomation.whatsnew" />
         <item itemvalue="TestNG.RedBrickMiniAutomation.test" />
       </list>
     </recent_temporary>
@@ -113,7 +132,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721234635029</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Change ApiActions class to static so it will have access from all across the project">
+      <option name="closed" value="true" />
+      <created>1721234814618</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1721234814618</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -121,6 +148,18 @@
     <MESSAGE value="Init commit" />
     <MESSAGE value="Other infra files" />
     <MESSAGE value="Removed comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed comments" />
+    <MESSAGE value="Change ApiActions class to static so it will have access from all across the project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change ApiActions class to static so it will have access from all across the project" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/RedBrickMiniAutomation.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

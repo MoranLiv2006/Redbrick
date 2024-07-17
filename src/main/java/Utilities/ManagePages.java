@@ -1,8 +1,6 @@
 package Utilities;
 
-import PageObjects.ContactUs;
-import PageObjects.Header;
-import PageObjects.HomePage;
+import PageObjects.*;
 import org.openqa.selenium.support.PageFactory;
 
 public class ManagePages extends Base {
@@ -11,5 +9,10 @@ public class ManagePages extends Base {
         homePage = PageFactory.initElements(webDriver, HomePage.class);
         header = PageFactory.initElements(webDriver, Header.class);
         contactUs = PageFactory.initElements(webDriver, ContactUs.class);
+        whatsNew = PageFactory.initElements(webDriver, WhatsNew.class);
+        careers = PageFactory.initElements(webDriver, Careers.class);
+        aboutUs = PageFactory.initElements(webDriver, AboutUs.class);
+        values = PageFactory.initElements(webDriver, Values.class);
+        people = PageFactory.initElements(webDriver, People.class);
     }
 }

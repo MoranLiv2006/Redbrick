@@ -1,8 +1,6 @@
 package Utilities;
 
-import PageObjects.ContactUs;
-import PageObjects.Header;
-import PageObjects.HomePage;
+import PageObjects.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -37,6 +35,11 @@ public class Base {
     public static HomePage homePage;
     public static Header header;
     public static ContactUs contactUs;
+    public static WhatsNew whatsNew;
+    public static Careers careers;
+    public static AboutUs aboutUs;
+    public static Values values;
+    public static People people;
 
     //Rest assured stuff:
     protected static Response response;
