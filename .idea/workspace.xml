@@ -4,26 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea34f962-e071-4f55-be7d-d2a957ae8a5c" name="Changes" comment="Init commit">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/AboutUs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/Careers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/Companies.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/ContactUs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/Header.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/WhatsNew.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/ApiActions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/ManagePages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/UiActions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/RedBrickMiniAutomation.java" afterDir="false" />
+    <list default="true" id="ea34f962-e071-4f55-be7d-d2a957ae8a5c" name="Changes" comment="Removed comments">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/ApiActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/ApiActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RedBrickMiniAutomation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RedBrickMiniAutomation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +25,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "MoranLiv2006"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/MoranLiv2006/Redbrick.git",
@@ -106,12 +97,30 @@
       <option name="project" value="LOCAL" />
       <updated>1721234504382</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Other infra files">
+      <option name="closed" value="true" />
+      <created>1721234560350</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1721234560350</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Removed comments">
+      <option name="closed" value="true" />
+      <created>1721234635029</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1721234635029</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init commit" />
+    <MESSAGE value="Other infra files" />
+    <MESSAGE value="Removed comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed comments" />
   </component>
 </project>

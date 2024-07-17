@@ -6,7 +6,7 @@ import static io.restassured.RestAssured.given;
 
 public class ApiActions extends Base {
 
-    private Response getRequestForAJoke() {
+    private static Response getRequestForAJoke() {
         response = given()
                 .get(CHUCK_NORRIS_API_URL + "/jokes/random")
                 .then()
@@ -16,7 +16,7 @@ public class ApiActions extends Base {
         return response;
     }
 
-    public String getChuckNorrisJoke() {
+    public static String getChuckNorrisJoke() {
         response = getRequestForAJoke();
         jsonPath = response.jsonPath();
         jsonPath.prettyPrint();

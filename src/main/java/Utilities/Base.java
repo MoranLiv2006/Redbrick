@@ -26,7 +26,7 @@ public class Base {
 
     //URLs:
     private final String REDBRICK_URL = "https://www.rdbrck.com/";
-    protected final String CHUCK_NORRIS_API_URL = "https://api.chucknorris.io";
+    protected static final String CHUCK_NORRIS_API_URL = "https://api.chucknorris.io";
 
     //Selenium webDriver stuff:
     protected static WebDriver webDriver;
@@ -39,8 +39,8 @@ public class Base {
     public static ContactUs contactUs;
 
     //Rest assured stuff:
-    protected Response response;
-    protected JsonPath jsonPath;
+    protected static Response response;
+    protected static JsonPath jsonPath;
 
     //Browser choice enum
     public enum BrowserTypes {
