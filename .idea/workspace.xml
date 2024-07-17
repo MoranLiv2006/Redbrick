@@ -4,21 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea34f962-e071-4f55-be7d-d2a957ae8a5c" name="Changes" comment="Added new pageObjects and more implementations in the old pageObjects.&#10;Added new instances in base class">
-      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/Company.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/Verifications.java" afterDir="false" />
+    <list default="true" id="ea34f962-e071-4f55-be7d-d2a957ae8a5c" name="Changes" comment="Added tests cases">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/AboutUs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/AboutUs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/Careers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/Careers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/Companies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/Companies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/ContactUs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/ContactUs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/Header.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/People.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/People.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/Values.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/Values.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/Company.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/WhatsNew.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/WhatsNew.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/ManagePages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/ManagePages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/UiActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/UiActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RedBrickMiniAutomation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RedBrickMiniAutomation.java" afterDir="false" />
     </list>
@@ -37,21 +27,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "MoranLiv2006"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MoranLiv2006&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/MoranLiv2006/Redbrick.git",
-    "accountId": "9abfe480-a474-44cd-98cb-9af448a47a21"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MoranLiv2006/Redbrick.git&quot;,
+    &quot;accountId&quot;: &quot;9abfe480-a474-44cd-98cb-9af448a47a21&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2jNUHuqwNrFghxnlD2RIkqyAZlr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -69,35 +59,36 @@
     "TestNG.RedBrickMiniAutomation.careersPageTest.executor": "Run",
     "TestNG.RedBrickMiniAutomation.companiesPageTest.executor": "Run",
     "TestNG.RedBrickMiniAutomation.contactUsPageTest.executor": "Run",
+    "TestNG.RedBrickMiniAutomation.executor": "Run",
     "TestNG.RedBrickMiniAutomation.homePageTest.executor": "Run",
     "TestNG.RedBrickMiniAutomation.test.executor": "Run",
-    "TestNG.RedBrickMiniAutomation.whatsNewPageTest.executor": "Debug",
+    "TestNG.RedBrickMiniAutomation.whatsNewPageTest.executor": "Run",
     "TestNG.RedBrickMiniAutomation.whatsnew.executor": "Run",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.RedBrickMiniAutomation.contactUsPageTest">
-    <configuration name="RedBrickMiniAutomation.aboutUsPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.RedBrickMiniAutomation">
+    <configuration name="RedBrickMiniAutomation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RedBrick" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RedBrickMiniAutomation" />
-      <option name="METHOD_NAME" value="aboutUsPageTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RedBrickMiniAutomation.careersPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="RedBrickMiniAutomation.aboutUsPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RedBrick" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RedBrickMiniAutomation" />
-      <option name="METHOD_NAME" value="careersPageTest" />
+      <option name="METHOD_NAME" value="aboutUsPageTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -143,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.RedBrickMiniAutomation" />
+        <item itemvalue="TestNG.RedBrickMiniAutomation.whatsNewPageTest" />
+        <item itemvalue="TestNG.RedBrickMiniAutomation.aboutUsPageTest" />
         <item itemvalue="TestNG.RedBrickMiniAutomation.contactUsPageTest" />
         <item itemvalue="TestNG.RedBrickMiniAutomation.companiesPageTest" />
-        <item itemvalue="TestNG.RedBrickMiniAutomation.whatsNewPageTest" />
-        <item itemvalue="TestNG.RedBrickMiniAutomation.careersPageTest" />
-        <item itemvalue="TestNG.RedBrickMiniAutomation.aboutUsPageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721241507744</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added tests cases">
+      <option name="closed" value="true" />
+      <created>1721253534740</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1721253534740</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -210,17 +209,7 @@
     <MESSAGE value="Removed comments" />
     <MESSAGE value="Change ApiActions class to static so it will have access from all across the project" />
     <MESSAGE value="Added new pageObjects and more implementations in the old pageObjects.&#10;Added new instances in base class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new pageObjects and more implementations in the old pageObjects.&#10;Added new instances in base class" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/RedBrickMiniAutomation.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Added tests cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added tests cases" />
   </component>
 </project>

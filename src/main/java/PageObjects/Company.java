@@ -23,6 +23,6 @@ public class Company {
     @FindBy(how = How.CSS, using = "div[class='portable-text [&_p]:max-w-[calc(theme(width.cols5)-theme(spacing.2))] [&_p]:md:max-w-cols8'] h3")
     public WebElement txt_nextAcquisitionTitle;
 
-    @FindBy(how = How.CLASS_NAME, using = "font-base type-d6 md:type-h5 font-semibold")
+    @FindBy(how = How.CSS, using = "div[class='flex w-full flex-col items-start justify-start overflow-hidden rounded-md bg-white p-3'] h5")
     public List<WebElement> list_nextAcquisitionObjects;
 }

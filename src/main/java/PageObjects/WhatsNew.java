@@ -14,6 +14,9 @@ public class WhatsNew {
     @FindBy(how = How.CSS, using = "div[class='box-px relative flex flex-row flex-nowrap items-center justify-start gap-1 overflow-y-hidden overflow-x-scroll [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden'] button")
     public List<WebElement> list_categoriesButtons;
 
+    @FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[1]/div[1]/div[3]/main[1]/section[1]/div[1]/div[1]/div[2]/h4[1]")
+    public WebElement txt_categoryTitle;
+
     @FindBy(how = How.CSS, using = "div.flex.flex-col.flex-nowrap.gap-2.px-2.py-2.sm\\:px-3.md\\:py-3 > h3")
     public List<WebElement> list_h3Titles;
 

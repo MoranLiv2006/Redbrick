@@ -3,6 +3,7 @@ import Utilities.UiActions;
 import Utilities.Verifications;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 import java.util.stream.Collectors;
@@ -11,8 +12,16 @@ import static Utilities.ApiActions.getChuckNorrisJoke;
 
 public class RedBrickMiniAutomation extends Base {
 
+    @AfterMethod
+    public void scrollBackToTheTopOfThePage() {
+        UiActions.scrollToPageTop();
+    }
+
     @Test
     public void homePageTest() {
+        //From the header, enter to homepage
+        UiActions.clickWebElement(header.btn_homepage);
+
         //Verifying 'Redbrick' logo is display on the homepage
         Assert.assertTrue(Verifications.verifyElementIsDisplayedAndEnabled(homePage.image_redbrickLogo));
 
@@ -34,8 +43,8 @@ public class RedBrickMiniAutomation extends Base {
     }
 
     @Test
-    public void aboutUsPageTest() {
-        //From the header, entering to the "about us" page
+    public void aboutUsPageTest() throws InterruptedException {
+        //From the header, enter to "about us" page
         UiActions.clickWebElement(header.btn_aboutUs);
 
         //Verifying the "about us" title is as expected
@@ -45,7 +54,7 @@ public class RedBrickMiniAutomation extends Base {
         UiActions.clickWebElement(aboutUs.btn_valuesCategory);
 
         //Verifying values title and description are as expected
-        Verifications.verifyElementIsDisplayedAndEnabled(values.txt_valuesTitle);
+        Assert.assertTrue(Verifications.verifyElementIsDisplayedAndEnabled(values.txt_valuesTitle));
         Assert.assertEquals(UiActions.getTextFromElement(values.txt_valuesTitle), "We believe in being leaders");
         Assert.assertEquals(UiActions.getTextFromElement(values.txt_h3Title), "Our global impact");
         Assert.assertEquals(UiActions.getTextFromElement(values.txt_h3Description),
@@ -64,7 +73,7 @@ public class RedBrickMiniAutomation extends Base {
                     System.out.println("Mission: " + UiActions.getTextFromElement(missionTitle) + " - " +
                             UiActions.getTextFromElement(values.list_missionArticles.get(0)));
                     Assert.assertEquals(UiActions.getTextFromElement(missionTitle), "Tech");
-                    Verifications.verifyElementIsDisplayedAndEnabled(values.image_techImage);
+                    Assert.assertTrue(Verifications.verifyElementIsDisplayedAndEnabled(values.image_techImage));
                     Assert.assertNotNull(UiActions.getTextFromElement(values.txt_techMissionDescription));
                     System.out.println(UiActions.getTextFromElement(values.txt_techMissionDescription));
                     System.out.println("");
@@ -106,7 +115,7 @@ public class RedBrickMiniAutomation extends Base {
         UiActions.clickWebElement(values.btn_stickyHeaderPeople);
 
         //Verifying people title and description are as expected
-        Verifications.verifyElementIsDisplayedAndEnabled(people.txt_peopleTitle);
+        Assert.assertTrue(Verifications.verifyElementIsDisplayedAndEnabled(people.txt_peopleTitle));
         Assert.assertEquals(UiActions.getTextFromElement(people.txt_peopleTitle), "Our team is the reason we succeed");
         Assert.assertEquals(UiActions.getTextFromElement(people.txt_h3Title), "We like to do things differently");
         Assert.assertEquals(UiActions.getTextFromElement(people.txt_h3Description),
@@ -127,8 +136,8 @@ public class RedBrickMiniAutomation extends Base {
         UiActions.clickWebElement(people.btn_stickyHeaderCompany);
 
         //Verifying company title and description are as expected
-        Verifications.verifyElementIsDisplayedAndEnabled(header.btn_homepage);
-        Verifications.verifyElementIsDisplayedAndEnabled(company.txt_companyTitle);
+        Assert.assertTrue(Verifications.verifyElementIsDisplayedAndEnabled(header.btn_homepage));
+        Assert.assertTrue(Verifications.verifyElementIsDisplayedAndEnabled(company.txt_companyTitle));
         Assert.assertEquals(UiActions.getTextFromElement(company.txt_companyTitle), "We are Redbrick");
         Assert.assertEquals(UiActions.getTextFromElement(company.txt_h3Title), "Creating a pathway for the next generation of tech");
         Assert.assertEquals(UiActions.getTextFromElement(company.txt_h3Description),
@@ -147,15 +156,15 @@ public class RedBrickMiniAutomation extends Base {
         Assert.assertEquals(UiActions.getTextFromElement(company.txt_nextAcquisitionTitle), "Our next acquisition");
         System.out.println("Our next acquisition objects are: ");
         for (WebElement nextAcquisitionObject : company.list_nextAcquisitionObjects) {
+            UiActions.scrollElementIntoView(nextAcquisitionObject);
             Assert.assertNotNull(UiActions.getTextFromElement(nextAcquisitionObject));
             System.out.println(UiActions.getTextFromElement(nextAcquisitionObject));
         }
-        Verifications.verifyElementIsDisplayedAndEnabled(header.btn_homepage);
     }
 
     @Test
     public void careersPageTest() {
-        //From the header, entering to the "careers" page
+        //From the header, enter to "careers" page
         UiActions.clickWebElement(header.btn_careers);
 
         //Verifying the careers page title
@@ -178,8 +187,8 @@ public class RedBrickMiniAutomation extends Base {
     }
 
     @Test
-    public void whatsNewPageTest() {
-        //From the header, entering to the "what's new" page
+    public void whatsNewPageTest() throws InterruptedException {
+        //From the header, enter to "what's new" page
         UiActions.clickWebElement(header.btn_whatsNew);
 
         //Verifying the what's new page title
@@ -187,16 +196,21 @@ public class RedBrickMiniAutomation extends Base {
                 "Redbrick walks with Pride");
 
         //for each category, the automation will verify that the brick news titles are not empty and will print them
-        for (WebElement category : whatsNew.list_categoriesButtons) {
+        for (WebElement categoryButton : whatsNew.list_categoriesButtons) {
+            System.out.println(UiActions.getTextFromElement(categoryButton));
+            UiActions.clickWebElement(categoryButton);
+            Thread.sleep(2000);
+            Assert.assertTrue(Verifications.verifyElementIsDisplayedAndEnabled(whatsNew.txt_categoryTitle));
+            if (UiActions.getTextFromElement(categoryButton).equalsIgnoreCase("All")) {
+                Assert.assertEquals(UiActions.getTextFromElement(whatsNew.txt_categoryTitle), "The Latest");
+            } else Assert.assertEquals(UiActions.getTextFromElement(categoryButton),
+                    UiActions.getTextFromElement(whatsNew.txt_categoryTitle));
 
-            System.out.println(UiActions.getTextFromElement(category));
-            UiActions.clickWebElement(category);
-
-            if (UiActions.getTextFromElement(category).equalsIgnoreCase("Press")) {
+            if (UiActions.getTextFromElement(categoryButton).equalsIgnoreCase("Press")) {
                 UiActions.scrollElementIntoView(whatsNew.list_pressH3Titles.get(1));
-                Verifications.verifyListIsLoadedCorrectly(whatsNew.list_pressH3Titles);
+//                Verifications.verifyListIsLoadedCorrectly(whatsNew.list_pressH3Titles);
                 for (WebElement newsTitle : whatsNew.list_pressH3Titles) {
-                    Verifications.verifyElementIsDisplayedAndEnabled(newsTitle);
+                    Assert.assertTrue(Verifications.verifyElementIsDisplayedAndEnabled(newsTitle));
                     Assert.assertNotNull(UiActions.getTextFromElement(newsTitle));
                     System.out.println(UiActions.getTextFromElement(newsTitle));
                 }
@@ -205,9 +219,8 @@ public class RedBrickMiniAutomation extends Base {
 
             //Wait for the news list to reload properly
             UiActions.scrollElementIntoView(whatsNew.list_h3Titles.get(1));
-            Verifications.verifyListIsLoadedCorrectly(whatsNew.list_h3Titles);
             for (WebElement newsTitle : whatsNew.list_h3Titles) {
-                Verifications.verifyElementIsDisplayedAndEnabled(newsTitle);
+                Assert.assertTrue(Verifications.verifyElementIsDisplayedAndEnabled(newsTitle));
                 Assert.assertNotNull(UiActions.getTextFromElement(newsTitle));
                 System.out.println(UiActions.getTextFromElement(newsTitle));
             }
@@ -216,7 +229,7 @@ public class RedBrickMiniAutomation extends Base {
 
     @Test
     public void contactUsPageTest() throws InterruptedException {
-        //From the header, entering to the "contact us" page
+        //From the header, enter to "contact us" page
         UiActions.clickWebElement(header.btn_contactUs);
 
         //Verifying the "contact us" title is as expected
