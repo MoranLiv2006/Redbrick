@@ -21,8 +21,6 @@ public class Header {
     @FindBy(how = How.CSS, using = "li[class='relative flex h-full flex-row flex-nowrap items-center'] a[href='/contact-us']")
     public WebElement btn_contactUs;
 
-
-
-
-
+    @FindBy(how = How.CSS, using = "div[class='z-nav flex w-full flex-row flex-wrap items-center justify-start'] a[class='row-wrap w-21 flex cursor-pointer items-center justify-start']")
+    public WebElement btn_homepage;
 }

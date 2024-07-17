@@ -17,5 +17,4 @@ public class AboutUs {
 
     @FindBy(how = How.CSS, using = "div[class='align-center z-headerBackground sticky top-0 flex flex-row flex-nowrap justify-center gap-1 bg-yellow-50 px-3 py-2 md:px-8 md:py-[1.25rem] transition-shadow'] > div> a[href='/values']")
     public WebElement btn_valuesCategory;
-//
 }

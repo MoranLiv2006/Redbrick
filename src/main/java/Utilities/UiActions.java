@@ -23,14 +23,6 @@ public class UiActions extends Base{
         webElement.sendKeys(text);
     }
 
-    public static void chooseOptionFromDropdown(WebElement dropdownElement, String optionToChoose) {
-        webDriverWait.until(ExpectedConditions.visibilityOf(dropdownElement));
-        Select select = new Select(dropdownElement);
-        for (WebElement webElement : select.getOptions()) {
-            System.out.println(getTextFromElement(webElement));
-        }
-    }
-
     public static void scrollElementIntoView(WebElement webElement) {
         JavascriptExecutor js = (JavascriptExecutor) webDriver;
         js.executeScript("arguments[0].scrollIntoView(true);", webElement);

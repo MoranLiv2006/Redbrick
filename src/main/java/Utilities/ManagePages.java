@@ -14,5 +14,7 @@ public class ManagePages extends Base {
         aboutUs = PageFactory.initElements(webDriver, AboutUs.class);
         values = PageFactory.initElements(webDriver, Values.class);
         people = PageFactory.initElements(webDriver, People.class);
+        company = PageFactory.initElements(webDriver, Company.class);
+        companies = PageFactory.initElements(webDriver, Companies.class);
     }
 }

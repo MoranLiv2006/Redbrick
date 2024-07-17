@@ -40,6 +40,8 @@ public class Base {
     public static AboutUs aboutUs;
     public static Values values;
     public static People people;
+    public static Company company;
+    public static Companies companies;
 
     //Rest assured stuff:
     protected static Response response;

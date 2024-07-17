@@ -47,5 +47,6 @@ public class Values {
     @FindBy(how = How.XPATH, using = "//*[@id=\"__next\"]/div/div[3]/main/section[9]/div/div[2]/section/div/div[1]/figure/img")
     public List<WebElement> list_communityImages;
 
-//
+    @FindBy(how = How.CSS, using = "div.mt-\\[calc\\(theme\\(magic\\.headerHeight\\.initial\\)\\*-1\\)\\].w-full.pt-\\[theme\\(magic\\.headerHeight\\.initial\\)\\].w-full.md\\:mt-\\[calc\\(theme\\(magic\\.headerHeight\\.md\\)\\*-1\\)\\].md\\:pt-\\[theme\\(magic\\.headerHeight\\.md\\)\\].flex-grow.flex.flex-col > main > div.align-center.z-headerBackground.sticky.top-0.flex.flex-row.flex-nowrap.justify-center.gap-1.bg-yellow-50.px-3.py-2.md\\:px-8.md\\:py-\\[1\\.25rem\\].transition-shadow.shadow-md > div:nth-child(2)")
+    public WebElement btn_stickyHeaderPeople;
 }

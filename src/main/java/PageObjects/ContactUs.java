@@ -18,9 +18,6 @@ public class ContactUs {
     @FindBy(how = How.CSS, using = "input[label='Email address']")
     public WebElement input_email;
 
-    @FindBy(how = How.CSS, using = "div[class=' css-1pc6j40']")
-    public WebElement btn_dropdown;
-
     @FindBy(how = How.CSS, using = "textarea[label='Message']")
     public WebElement input_message;
 }
